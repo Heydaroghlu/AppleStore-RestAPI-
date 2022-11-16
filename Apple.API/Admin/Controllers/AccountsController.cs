@@ -8,9 +8,6 @@ namespace Apple.API.Admin.Controllers
     [ApiController]
     public class AccountsController : ControllerBase
     {
-        public IActionResult Login()
-        {
-
-        }
+       
     }
 }

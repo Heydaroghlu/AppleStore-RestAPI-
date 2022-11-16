@@ -1,0 +1,84 @@
+2022-11-16 11:59:34.954 -08:00 [INF] Project Started
+2022-11-16 12:02:21.549 -08:00 [INF] Project Started
+2022-11-16 12:02:59.645 -08:00 [INF] Project Started
+2022-11-16 12:03:51.774 -08:00 [INF] Project Started
+2022-11-16 12:04:01.268 -08:00 [INF] Project Started
+2022-11-16 12:04:10.694 -08:00 [INF] Project Started
+2022-11-16 12:04:22.163 -08:00 [INF] Project Started
+2022-11-16 12:05:54.517 -08:00 [INF] Project Started
+2022-11-16 12:06:38.466 -08:00 [INF] Project Started
+2022-11-16 12:07:41.995 -08:00 [INF] Project Started
+2022-11-16 12:09:44.386 -08:00 [INF] Project Started
+2022-11-16 12:10:16.006 -08:00 [INF] Project Started
+2022-11-16 12:16:00.622 -08:00 [INF] Project Started
+2022-11-16 12:16:01.069 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 12:16:01.072 -08:00 [INF] Hosting environment: Development
+2022-11-16 12:16:01.074 -08:00 [INF] Content root path: D:\Projects\Apple\Apple.API
+2022-11-16 12:16:01.102 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/index.html - -
+2022-11-16 12:16:01.355 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/_framework/aspnetcore-browser-refresh.js - -
+2022-11-16 12:16:01.358 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/index.html - - - 200 - text/html;charset=utf-8 259.3598ms
+2022-11-16 12:16:01.362 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 4.2018ms
+2022-11-16 12:16:01.368 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/_vs/browserLink - -
+2022-11-16 12:16:01.412 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.5357ms
+2022-11-16 12:16:01.497 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/v1/swagger.json - -
+2022-11-16 12:16:01.569 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.7638ms
+2022-11-16 12:16:14.464 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/api/Categories - -
+2022-11-16 12:16:14.485 -08:00 [WRN] Failed to determine the https port for redirect.
+2022-11-16 12:16:14.512 -08:00 [INF] Executing endpoint 'Apple.API.Controllers.CategoriesController.GetAll (Apple.API)'
+2022-11-16 12:16:14.544 -08:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Apple.Service.DTOs.CategoryDTOs.CategoryGetDTO]] GetAll() on controller Apple.API.Controllers.CategoriesController (Apple.API).
+2022-11-16 12:16:15.211 -08:00 [INF] Entity Framework Core 5.0.17 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-11-16 12:16:15.828 -08:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsDelete], [t].[CategorName]
+FROM [tbl_Categories] AS [t]
+WHERE ([t].[IsDelete] <> CAST(1 AS bit)) AND ([t].[IsDelete] <> CAST(1 AS bit))
+2022-11-16 12:16:15.911 -08:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Apple.Service.DTOs.CategoryDTOs.CategoryGetDTO, Apple.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-16 12:16:15.923 -08:00 [INF] Executed action Apple.API.Controllers.CategoriesController.GetAll (Apple.API) in 1374.4966ms
+2022-11-16 12:16:15.924 -08:00 [INF] Executed endpoint 'Apple.API.Controllers.CategoriesController.GetAll (Apple.API)'
+2022-11-16 12:16:15.928 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/api/Categories - - - 200 - application/json;+charset=utf-8 1464.4426ms
+2022-11-16 12:17:00.482 -08:00 [INF] Project Started
+2022-11-16 12:17:00.819 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 12:17:00.822 -08:00 [INF] Hosting environment: Development
+2022-11-16 12:17:00.823 -08:00 [INF] Content root path: D:\Projects\Apple\Apple.API
+2022-11-16 12:17:00.837 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/index.html - -
+2022-11-16 12:17:01.003 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/_vs/browserLink - -
+2022-11-16 12:17:01.003 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/_framework/aspnetcore-browser-refresh.js - -
+2022-11-16 12:17:01.005 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/index.html - - - 200 - text/html;charset=utf-8 172.6051ms
+2022-11-16 12:17:01.009 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 3.9022ms
+2022-11-16 12:17:01.039 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.4214ms
+2022-11-16 12:17:01.145 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/v1/swagger.json - -
+2022-11-16 12:17:01.250 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.4924ms
+2022-11-16 12:17:20.036 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/api/Categories - -
+2022-11-16 12:17:20.041 -08:00 [WRN] Failed to determine the https port for redirect.
+2022-11-16 12:17:20.067 -08:00 [INF] Executing endpoint 'Apple.API.Controllers.CategoriesController.GetAll (Apple.API)'
+2022-11-16 12:17:20.092 -08:00 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Apple.Service.DTOs.CategoryDTOs.CategoryGetDTO]] GetAll() on controller Apple.API.Controllers.CategoriesController (Apple.API).
+2022-11-16 12:17:20.119 -08:00 [INF] Executed action Apple.API.Controllers.CategoriesController.GetAll (Apple.API) in 22.9782ms
+2022-11-16 12:17:20.120 -08:00 [INF] Executed endpoint 'Apple.API.Controllers.CategoriesController.GetAll (Apple.API)'
+2022-11-16 12:17:20.120 -08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Apple.Core.UnitOfWork.IUnitOfWork' while attempting to activate 'Apple.API.Controllers.CategoriesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 12:17:20.185 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/api/Categories - - - 500 - text/plain 149.3345ms
+2022-11-16 12:18:03.764 -08:00 [INF] Project Started
+2022-11-16 12:18:04.051 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 12:18:04.053 -08:00 [INF] Hosting environment: Development
+2022-11-16 12:18:04.053 -08:00 [INF] Content root path: D:\Projects\Apple\Apple.API
+2022-11-16 12:18:04.066 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/index.html - -
+2022-11-16 12:18:04.218 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/_vs/browserLink - -
+2022-11-16 12:18:04.219 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/_framework/aspnetcore-browser-refresh.js - -
+2022-11-16 12:18:04.221 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/index.html - - - 200 - text/html;charset=utf-8 157.4645ms
+2022-11-16 12:18:04.225 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 3.7703ms
+2022-11-16 12:18:04.254 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.0994ms
+2022-11-16 12:18:04.334 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/v1/swagger.json - -
+2022-11-16 12:18:04.408 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.8004ms
