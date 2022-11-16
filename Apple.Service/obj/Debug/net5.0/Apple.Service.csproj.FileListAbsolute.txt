@@ -1,0 +1,17 @@
+D:\Projects\Apple\Apple.Service\bin\Debug\net5.0\Apple.Service.deps.json
+D:\Projects\Apple\Apple.Service\bin\Debug\net5.0\Apple.Service.dll
+D:\Projects\Apple\Apple.Service\bin\Debug\net5.0\Apple.Service.pdb
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\Apple.Service.csproj.AssemblyReference.cache
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\Apple.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\Apple.Service.AssemblyInfoInputs.cache
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\Apple.Service.AssemblyInfo.cs
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\Apple.Service.csproj.CoreCompileInputs.cache
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\Apple.Service.dll
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\refint\Apple.Service.dll
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\Apple.Service.pdb
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\ref\Apple.Service.dll
+D:\Projects\Apple\Apple.Service\bin\Debug\net5.0\Apple.Core.dll
+D:\Projects\Apple\Apple.Service\bin\Debug\net5.0\Apple.Data.dll
+D:\Projects\Apple\Apple.Service\bin\Debug\net5.0\Apple.Data.pdb
+D:\Projects\Apple\Apple.Service\bin\Debug\net5.0\Apple.Core.pdb
+D:\Projects\Apple\Apple.Service\obj\Debug\net5.0\Apple.Service.csproj.CopyComplete
