@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Apple.Core.Repositories
 {
 
-    public interface IGenericRepository<TEntity,in TPrimaryKey>:IDisposable where TEntity : BaseEntity<TPrimaryKey>
+    public interface IGenericRepository<TEntity,in TPrimaryKey>:IDisposable where TEntity : class
     {
         Task<TEntity> InsertAsync(TEntity entity);
         Task<TEntity> Update(TEntity entity);

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Apple.Data.Repositories
 {
-    public class GenericRepository<TEntity, TPrimaryKey> : IGenericRepository<TEntity, TPrimaryKey> where TEntity : BaseEntity<TPrimaryKey>
+    public class GenericRepository<TEntity, TPrimaryKey> : IGenericRepository<TEntity, TPrimaryKey> where TEntity : class
     {
         private readonly DataContext _context;
         public GenericRepository(DataContext context)

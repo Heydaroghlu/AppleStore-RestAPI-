@@ -1,3 +1,4 @@
+using Apple.Core.Entities;
 using Apple.Core.Repositories;
 using Apple.Core.UnitOfWork;
 using Apple.Data;
@@ -6,19 +7,24 @@ using Apple.Data.UnitOfWork;
 using Apple.Service.AppProfiles;
 using Apple.Service.Validators.CategoriesValidator;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Apple.API
@@ -45,12 +51,34 @@ namespace Apple.API
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
+            services.AddIdentity<User,IdentityRole>(opt=>
+            {
+                opt.Password.RequireDigit = false;
+                opt.Password.RequireLowercase = false;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequiredLength = 6;
+                opt.Password.RequiredUniqueChars = 0;
+                opt.Password.RequireUppercase = false;
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<DataContext>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient(typeof(IGenericRepository<,>),typeof(GenericRepository<,>));
             services.AddFluentValidation(x =>x.RegisterValidatorsFromAssemblyContaining(typeof(CategoryPostValidator)));
             services.AddAutoMapper(opt =>
             {
                 opt.AddProfile(new AppProfile());
+            });
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+            {
+                opt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = Configuration["JWT:Issuer"],
+                    ValidAudience = Configuration["JWT:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"]))
+                };
             });
         }
 
@@ -67,6 +95,7 @@ namespace Apple.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

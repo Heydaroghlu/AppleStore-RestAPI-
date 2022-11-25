@@ -11,5 +11,6 @@ namespace Apple.Core.Entities
     {
         public string Name { get; set; }
         public bool IsDelete { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

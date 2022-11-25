@@ -30,6 +30,8 @@ namespace Apple.API.Controllers
             var result = await _unitOfWork.CategoryRepository.GetAllAsync(x => !x.IsDelete);
             List<CategoryGetDTO> categoryies = _mapper.Map<List<CategoryGetDTO>>(result);
             return  categoryies; 
+
+            
         }
     }
 }

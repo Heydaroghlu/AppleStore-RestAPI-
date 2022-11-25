@@ -11,6 +11,8 @@ namespace Apple.Core.UnitOfWork
     public interface IUnitOfWork
     {
         IGenericRepository<Category,int> CategoryRepository { get; }
+        IGenericRepository<User, int> UserRepository { get; }
+
         public Task Commit();
     }
 }

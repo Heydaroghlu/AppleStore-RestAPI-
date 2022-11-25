@@ -1,0 +1,23 @@
+2022-11-19 01:11:48.947 -08:00 [INF] Project Started
+2022-11-19 01:11:50.491 -08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-19 01:11:50.494 -08:00 [INF] Hosting environment: Development
+2022-11-19 01:11:50.495 -08:00 [INF] Content root path: D:\Projects\Apple\Apple.API
+2022-11-19 01:11:50.514 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger - -
+2022-11-19 01:11:50.575 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/index.html - -
+2022-11-19 01:11:50.577 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger - - - 301 - - 65.9114ms
+2022-11-19 01:11:50.775 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/index.html - - - 200 - text/html;charset=utf-8 199.5225ms
+2022-11-19 01:11:50.777 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/swagger-ui.css - -
+2022-11-19 01:11:50.777 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/swagger-ui-bundle.js - -
+2022-11-19 01:11:50.777 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/swagger-ui-standalone-preset.js - -
+2022-11-19 01:11:50.800 -08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-19 01:11:50.801 -08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-19 01:11:50.803 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/swagger-ui.css - - - 200 142933 text/css 25.8532ms
+2022-11-19 01:11:50.807 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/_framework/aspnetcore-browser-refresh.js - -
+2022-11-19 01:11:50.811 -08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-19 01:11:50.812 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 3.0681ms
+2022-11-19 01:11:50.812 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 34.5896ms
+2022-11-19 01:11:50.816 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/_vs/browserLink - -
+2022-11-19 01:11:50.846 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 68.9854ms
+2022-11-19 01:11:50.882 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.4737ms
+2022-11-19 01:11:51.016 -08:00 [INF] Request starting HTTP/1.1 GET http://localhost:41585/swagger/v1/swagger.json - -
+2022-11-19 01:11:51.093 -08:00 [INF] Request finished HTTP/1.1 GET http://localhost:41585/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.0645ms

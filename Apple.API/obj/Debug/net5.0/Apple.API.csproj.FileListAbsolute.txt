@@ -38,7 +38,6 @@ D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -88,3 +87,7 @@ D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Serilog.Sinks.Console.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
 D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Serilog.Sinks.File.dll
+D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Projects\Apple\Apple.API\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Projects\Apple\Apple.API\obj\Debug\net5.0\Apple.API.Properties.Resources.resources
+D:\Projects\Apple\Apple.API\obj\Debug\net5.0\Apple.API.csproj.GenerateResource.cache

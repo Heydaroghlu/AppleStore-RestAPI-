@@ -13,11 +13,16 @@ namespace Apple.Data.UnitOfWork
     public class UnitOfWork : IUnitOfWork
     {
         public IGenericRepository<Category, int> CategoryRepository { get;}
+
+        public IGenericRepository<User, int> UserRepository { get;}
+
         private readonly DataContext _context;
         public UnitOfWork(DataContext context)
         {
             _context = context;
             CategoryRepository = new GenericRepository<Category, int>(_context);
+            UserRepository = new GenericRepository<User, int>(_context);
+
         }
 
         public async Task Commit()

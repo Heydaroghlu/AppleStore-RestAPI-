@@ -13,7 +13,7 @@ namespace Apple.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("tbl_Users");
+
         }
     }
 }
